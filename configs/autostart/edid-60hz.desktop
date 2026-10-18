@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Panel 60Hz
+Comment=Aplica 60Hz al panel eDP-1 al iniciar sesion
+Exec=sh -c "sleep 8; kscreen-doctor output.eDP-1.mode.1920x1080@60"
+Icon=preferences-desktop-display
+Terminal=false
+NoDisplay=false
+Categories=System;

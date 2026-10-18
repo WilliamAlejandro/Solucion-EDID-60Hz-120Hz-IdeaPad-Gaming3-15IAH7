@@ -1,0 +1,10 @@
+#!/bin/sh
+PREREQ=""
+prereqs () { echo "$PREREQ"; }
+case "$1" in
+  prereqs) prereqs; exit 0 ;;
+esac
+. /usr/share/initramfs-tools/hook-functions
+mkdir -p "$DESTDIR/usr/lib/firmware/edid"
+cp /usr/lib/firmware/edid/panel60-120.bin "$DESTDIR/usr/lib/firmware/edid/panel60-120.bin"
+cp /usr/lib/firmware/panel60-120.bin "$DESTDIR/usr/lib/firmware/panel60-120.bin"
